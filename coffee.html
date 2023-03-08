@@ -8,16 +8,22 @@
     <link href="coffee.css" rel="stylesheet" >
     
 </head>
-<body >
+<body style="color: black;">
+    <div class="coffee_form">
     <form style="text-align: center;">
-    <h1>Coffee Count</h1>
+    <h1 class="greeting">Coffee Count</h1>
     <p class="count"></p>
-    <div style="width: 500px; margin: 0 auto; display: flex; justify-content: space-between;">
+    <div class="width_of_card" style="width: 500px; margin: 0 auto; display: flex; justify-content: space-between;">
     <input class="increase" onclick="increase()" placeholder="increase"></button>
     <input class="decrease" onclick="decrease()" placeholder="decrease"></button>
     <button class="decrease" onclick="decrease()" placeholder="reset">Reset</button>
     </div>
     </form>
+    <div class="width_of_card" style="width:70%;text-align: center;margin-top: 30px;">
+    <button class="button" onclick="save()">save</button>
+    <button class='button' onclick="greet()">greet</button>
+    </div>
+    </div>
     <script src="coffee.js"></script>
 </body>
 </html>
