@@ -1,0 +1,21 @@
+.count{
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.increase,.decrease{
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    transition: 0.3s;
+    text-align: center;
+    border-color: black;
+}
+
+button{
+    background-color: transparent;
+}
+
+.increase:hover,.decrease:hover{
+    background-color: rgba(0, 0, 0, 0.422);
+}
