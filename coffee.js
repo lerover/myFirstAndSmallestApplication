@@ -6,16 +6,17 @@ let customerName = 'Win'
 const titleEl = document.querySelector('.greeting')
  
 let count = 0
-countEl.innerText = count
+countEl.textContent = count
 function increase() {
      count = count + 1
-     countEl.innerText = count
+     countEl.textContent = count
 }
 
 function decrease() {
-    count = count - 1
-    countEl.innerText = count
-}
+    if (count>0) {
+        count = count - 1
+        countEl.textContent = count
+    }}
 
 function save() {
     customerCount.push(count)
@@ -24,7 +25,12 @@ function save() {
 }
 
 function greet() {
-    titleEl.innerText = greeting + ' ' + customerName
+    titleEl.textContent = greeting + ' ' + customerName
+}
+
+function reset() {
+count = 0
+countEl.textContent=count
 }
 
 
